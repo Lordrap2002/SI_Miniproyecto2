@@ -1,19 +1,24 @@
-import openal as al
-import time
+import os
+from openal import * 
+from pydub import AudioSegment
 
-class audio:
-    def __init__(self, audioPath, position, duration):
-        self.audioPath = audioPath
+def get_audio_duration(filename):
+    audio = AudioSegment.from_file(filename)
+    return len(audio) / 1000.0
+
+class Audio:
+    def __init__(self, audioPath, position):
+        self.audioPath = os.path.join("sounds", audioPath + ".wav")
         self.position = position
-        self.duration = duration
-    
+        self.duration = get_audio_duration(self.audioPath)
+        self.source = oalOpen(self.audioPath)
+
     def play(self):
-        buffer = al.oalOpen(self.audioPath)
-        source = al.oalGetSource()
-        source.set_buffer(buffer)
-        source.set_position(self.position)
-        source.play()
-        while source.get_state() == al.AL_PLAYING:
-            time.sleep(self.duration)
-        source.delete()
-        buffer.delete()
+        self.source.set_position(self.position)
+        self.source.set_gain(1)
+        self.source.play()
+
+    def stop(self):
+        if self.source.get_state() == AL_PLAYING:
+            self.source.stop()
+
