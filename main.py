@@ -24,28 +24,27 @@ def main():
 
     menuSonido = Audio("menuSound", (0, 0, 0))
     
-    # Crear un hilo para la reproducción de audio
-    audio_thread = threading.Thread(target=play_audio_in_thread, args=(menuSonido,))
-    audio_thread.start()
+    # Hilo para la reproducción de audio simultanea
+    audioThread = threading.Thread(target=play_audio_in_thread, args=(menuSonido,))
+    audioThread.start()
 
     userInput = input().strip().lower()
 
-    if userInput == '2':
+    if userInput == '1':
         print("Saliendo del programa...")
         menuSonido.stop()
-        audio_thread.join()  # Esperar a que el hilo termine
+        audioThread.join()
         alc.alcDestroyContext(context)
         alc.alcCloseDevice(device)
         sys.exit()
-    else:
+    elif userInput == '0':
         menuSonido.stop()
-        audio_thread.join()  # Esperar a que el hilo termine
+        audioThread.join()  # Esperar a que el hilo termine
         start()
 
-    # Cerrar OpenAL al final
+    # Cerrar OpenAL
     oalQuit()
     alc.alcDestroyContext(context)
     alc.alcCloseDevice(device)
 
-if __name__ == "__main__":
-    main()
+main()
