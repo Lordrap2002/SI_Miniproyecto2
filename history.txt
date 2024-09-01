@@ -1,4 +1,4 @@
-Abres los ojos de un sueno donde te estabas quedado sin aire y no recuerdas la razon. De repente, despiertas al escuchar una discusion fuera de tu apartamento. Podrias INVESTIGAR el alboroto o no desviarte y DORMIR.#4,2#INVESTIGAR,DORMIR
+Abres los ojos de un sueno donde te estabas quedado sin aire y no recuerdas la razon. De repente, despiertas al escuchar una discusion fuera de tu apartamento. Podrias INVESTIGAR el alboroto o no desviarte y DORMIR.#4,2#INVESTIGAR,DORMIR#1
 El ruido es fuerte pero tus ganas de dormir son mayores. ¿Enserio quieres SEGUIR durmiendo o DESPERTAR?#3,4#
 FINAL 1: MIMIDO, escoges permanecer en cama como si nada hubiera ocurrido.#FIN
 La curiosidad siempre fue tu debilidad y abres un poco la puerta. No puedes evitar MIRAR.#5#

@@ -22,7 +22,7 @@ def menu():
     print("Gracias por jugar! :)")
 
 def start():
-    sounds = [Audio("menuSound", (0, 0, 0))]
+    sounds = [Audio("menuSound", (0, 0, 0)), Audio("BassDrum", (0, 0, 0))]
     intro = Line(0, sounds)
     intro.playSounds()
     print(intro)
