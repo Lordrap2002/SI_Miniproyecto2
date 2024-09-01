@@ -9,7 +9,7 @@ def printMenu():
         print(menu)
 
 def menu():
-    menuSonido = Audio("menuSound", (10, 0, 0))
+    menuSonido = Audio("menuSoundMono", (0, 0, 0))
     menuSonido.play()
     printMenu()
     userInput = int(stdin.readline())
