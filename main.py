@@ -1,7 +1,7 @@
 from openal import *
 from audio import Audio
+from line import Line
 from sys import stdin
-import threading
 
 def printMenu():
     with open("menu.txt", "r") as file:
@@ -17,17 +17,30 @@ def menu():
     if userInput == 1:
         print("Saliendo del programa...")
     elif userInput == 0:
+        print("¡El juego ha comenzado!")
         start()
+    print("Gracias por jugar! :)")
 
 def start():
-    print("¡El juego ha comenzado!")
+    sounds = [Audio("menuSound", (0, 0, 0))]
+    intro = Line(1, 0, sounds)
+    intro.playSounds()
+    print(intro)
+    userInput = int(stdin.readline())
+    intro.stopSounds()
+    if userInput:
+        print(1)
+    else:
+        print(0)
+    print(-1)
 
 def main():
     # Start OpenAL 
     device = alc.alcOpenDevice(None)
     context = alc.alcCreateContext(device, None)
     alc.alcMakeContextCurrent(context)
-
+    listener = oalGetListener()
+    listener.set_position((0, 0, 0))
     menu()
 
     # Cerrar OpenAL
@@ -37,6 +50,7 @@ def main():
 
 main()
 
+#import threading
     # Hilo para la reproducción de audio simultanea
     #audioThread = threading.Thread(target=play_audio_in_thread, args=(menuSonido,))
     #audioThread = threading.Thread(target=menuSonido.play())
