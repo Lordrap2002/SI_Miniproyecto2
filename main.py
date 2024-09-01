@@ -3,13 +3,27 @@ from audio import Audio
 from line import Line
 from sys import stdin
 
+def playLine(lineNumber):
+    line = Line(lineNumber)
+    line.playSounds()
+    print(line)
+    if len(line.paths):
+        userInput = stdin.readline().strip().upper()
+        while not userInput in line.options:
+            print("Esa no es una opcion.")
+            userInput = stdin.readline().strip().upper()
+        line.stopSounds()
+        playLine(line.paths[line.options.index(userInput)])
+    else:
+        line.stopSounds()
+
 def printMenu():
     with open("menu.txt", "r") as file:
         menu = file.read()
         print(menu)
 
 def menu():
-    menuSonido = Audio("menuSoundMono", (-0.5, 0, 0))
+    menuSonido = Audio("menuSoundMono", (0, 0, 0))
     menuSonido.play()
     printMenu()
     userInput = int(stdin.readline())
@@ -18,21 +32,8 @@ def menu():
         print("Saliendo del programa...")
     elif userInput == 0:
         print("¡El juego ha comenzado!")
-        start()
+        playLine(1)
     print("Gracias por jugar! :)")
-
-def start():
-    sounds = [Audio("menuSound", (0, 0, 0)), Audio("BassDrum", (0, 0, 0))]
-    intro = Line(0, sounds)
-    intro.playSounds()
-    print(intro)
-    userInput = int(stdin.readline())
-    intro.stopSounds()
-    if userInput:
-        print(1)
-    else:
-        print(0)
-    print(-1)
 
 def main():
     # Start OpenAL 
