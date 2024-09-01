@@ -23,7 +23,7 @@ def menu():
 
 def start():
     sounds = [Audio("menuSound", (0, 0, 0))]
-    intro = Line(1, 0, sounds)
+    intro = Line(0, sounds)
     intro.playSounds()
     print(intro)
     userInput = int(stdin.readline())
@@ -39,20 +39,12 @@ def main():
     device = alc.alcOpenDevice(None)
     context = alc.alcCreateContext(device, None)
     alc.alcMakeContextCurrent(context)
-    listener = oalGetListener()
-    listener.set_position((0, 0, 0))
+
     menu()
 
-    # Cerrar OpenAL
+    # Close OpenAL
     oalQuit()
     alc.alcDestroyContext(context)
     alc.alcCloseDevice(device)
 
 main()
-
-#import threading
-    # Hilo para la reproducción de audio simultanea
-    #audioThread = threading.Thread(target=play_audio_in_thread, args=(menuSonido,))
-    #audioThread = threading.Thread(target=menuSonido.play())
-    #audioThread.start()
-    #audioThread.join()
