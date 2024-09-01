@@ -9,7 +9,7 @@ def printMenu():
         print(menu)
 
 def menu():
-    menuSonido = Audio("menuSoundMono", (0, 0, 0))
+    menuSonido = Audio("menuSoundMono", (-0.5, 0, 0))
     menuSonido.play()
     printMenu()
     userInput = int(stdin.readline())
@@ -39,6 +39,9 @@ def main():
     device = alc.alcOpenDevice(None)
     context = alc.alcCreateContext(device, None)
     alc.alcMakeContextCurrent(context)
+    oalGetListener().set_position((0, 0, 0))
+    # (forward_x, forward_y, forward_z, up_x, up_y, up_z)
+    oalGetListener().set_orientation((0, 0, -1, 0, 1, 0))
 
     menu()
 
