@@ -12,7 +12,7 @@ class Line:
             if len(line) > 2:
                 return line[0], [int(x) for x in line[1].split(",")], line[2].split(","), self.getSounds([int(x) for x in line[3].split(",")])
             else:
-                return line[0], [], [], []
+                return line[0], [], [], self.getSounds([int(x) for x in line[2].split(",")])
     
     def getSounds(self, soundLines):
         sounds = []
@@ -21,7 +21,8 @@ class Line:
             for line in soundLines:
                 data = lines[line - 1].split("#")
                 position = tuple([int(x) for x in data[1].split(",")])
-                sounds.append(Audio(data[0], position))
+                gain = float(data[2])
+                sounds.append(Audio(data[0], position, gain))
         return sounds
         
     def __str__(self):

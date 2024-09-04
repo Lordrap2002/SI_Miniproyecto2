@@ -15,6 +15,8 @@ def playLine(lineNumber):
         line.stopSounds()
         playLine(line.paths[line.options.index(userInput)])
     else:
+        print("El juego ha llegado a su fin, presiona Enter para salir.")
+        userInput = stdin.readline()
         line.stopSounds()
 
 def printMenu():
@@ -23,16 +25,22 @@ def printMenu():
         print(menu)
 
 def menu():
-    menuSonido = Audio("menuSoundMono", (0, 0, 0))
-    menuSonido.play()
-    printMenu()
-    userInput = int(stdin.readline())
-    menuSonido.stop()
-    if userInput == 1:
-        print("Saliendo del programa...")
-    elif userInput == 0:
-        print("¡El juego ha comenzado!")
-        playLine(1)
+    userInput = 0
+    while userInput != 1:
+        menuSonido = Audio("menuSoundMono", (0, 0, 0), 1)
+        menuSonido.play()
+        printMenu()
+        userInput = int(stdin.readline())
+        opciones = [0, 1]
+        while not userInput in opciones:
+            print("Esa no es una opcion.")
+            userInput = int(stdin.readline())
+        menuSonido.stop()
+        if userInput == 1:
+            print("Saliendo del programa...")
+        elif userInput == 0:
+            print("¡El juego ha comenzado!")
+            playLine(1)
     print("Gracias por jugar! :)")
 
 def main():
