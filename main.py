@@ -4,6 +4,9 @@ from line import Line
 from sys import stdin
 
 def playLine(lineNumber):
+    """
+    Gets a number line and displays text and sound associated to it.
+    """
     line = Line(lineNumber)
     line.playSounds()
     print(line)
@@ -20,11 +23,17 @@ def playLine(lineNumber):
         line.stopSounds()
 
 def printMenu():
+    """
+    Reads and displays MENU Interface
+    """
     with open("menu.txt", "r") as file:
         menu = file.read()
         print(menu)
 
 def menu():
+    """
+    Handles Menu Options.
+    """
     userInput = 0
     while userInput != 1:
         menuSonido = Audio("MainTheme", (0, 0, 0), 0.3)
@@ -44,6 +53,9 @@ def menu():
     print("Gracias por jugar! :)")
 
 def main():
+    """
+    Start OpenAl sound management and Menu.
+    """
     # Start OpenAL 
     device = alc.alcOpenDevice(None)
     context = alc.alcCreateContext(device, None)

@@ -2,6 +2,9 @@ from sys import stdin
 from audio import Audio
 
 class Line:
+    """
+    Handles Line organization from history.txt.
+    """
     def __init__(self, lineNumber):
         self.lineNumber = lineNumber - 1
         self.text, self.paths, self.options, self.sounds = self.getData()

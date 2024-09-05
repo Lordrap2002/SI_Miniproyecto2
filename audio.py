@@ -1,6 +1,9 @@
 from openal import *
 
 class Audio:
+    """
+    Handles audio information
+    """
     def __init__(self, audioPath, position, gain):
         self.audioPath = "sounds\\" + audioPath + ".wav"
         self.position = position
