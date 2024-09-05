@@ -37,13 +37,18 @@ Create a Zork-type video game, text mode using OpenAL. The video game had to bui
 * ![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?style=for-the-badge&logo=YouTube&logoColor=white)
 * ![Discord](https://img.shields.io/badge/Discord-%235865F2.svg?style=for-the-badge&logo=discord&logoColor=white)
 
+## Decision Making
+The city environment plays a key role in creating a rich 3D soundscape. By taking into account the buildings' heights and various noise levels, we're able to map sounds to specific coordinates on the x, y, and z axes. This allows us to position sounds at different heights, reflecting how noises like traffic, voices, and distant sirens might come from above or below the player.In other words, to enhance the chaotic atmosphere, we interlocked multiple sounds—like to create a sense of immersion. 
+
+By adjusting the intensity levels of each sound, you maintain a balance so that no single noise overwhelms the player, while still emphasizing the constant motion and unpredictability of the city.
+
 ## Roadmap
 
 - [x] Choose a Programming Language
 - [x] Decide the Plot
-- [] Write the Plot
-- [] Collect Audio Files
-- [] Code the plot into a Game
+- [X] Write the Plot
+- [X] Collect Audio Files
+- [X] Code the plot into a Game
 - [] Publish
 
 
