@@ -51,12 +51,9 @@ def main():
     oalGetListener().set_position((0, 0, 0))
     # (forward_x, forward_y, forward_z, up_x, up_y, up_z)
     oalGetListener().set_orientation((0, 0, -1, 0, 1, 0))
-
     menu()
-
     # Close OpenAL
     oalQuit()
     alc.alcDestroyContext(context)
     alc.alcCloseDevice(device)
-
 main()

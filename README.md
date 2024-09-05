@@ -49,6 +49,6 @@ By adjusting the intensity levels of each sound, you maintain a balance so that 
 - [X] Write the Plot
 - [X] Collect Audio Files
 - [X] Code the plot into a Game
-- [] Publish
+- [X] Publish
 
 

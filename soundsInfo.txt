@@ -8,7 +8,7 @@ AngryMale#2,0,10#0.9
 WomanComplaining#2,0,10#0.9
 CityTraffic#-10,-15,0#0.3
 DoorOpen#0,0,10#0.6
-Thud#0,0,10#1
+Thud#0,-4,10#0.7
 Gunshot#0,0,10#1
 DoorCreaking#0,0,0#1
 FloorCreak#0,0,0#1
@@ -17,14 +17,14 @@ SadViolin#0,0,0#1
 Wind#0,20,0#0.8
 ManSpeaks#0,0,20#10
 CityTraffic#0,-20,0#0.2
-Thud#0,0,0#1
+Thud#0,0,0#0.8
 Wind#-5,0,0#0.5
 WalkingSlowly#0,0,10#0.8
 Breathe#0,0,0#1
 Heartbeat#0,-5,-5#5
 Yawn#0,0,0#1
 RunningFootsteps#0,-10,0#0.8
-CityTraffic#0,0,10#0.9
+CityTraffic#0,0,10#3
 OldWoman#5,0,0#0.8
 Subway#0,0,10#0.9
 Taxi#0,0,10#0.7
@@ -35,8 +35,8 @@ PoliceTwo#0,-10,0#5
 Colombia#0,0,0#1
 ShopDoor#0,40,0#4
 Barking#-1,-10,0#3
-Laundromat#0,30,0#3
-GunReload#0,-10,0#0.7
+Laundromat#0,30,0#0.7
+GunReload#0,-10,0#0.8
 Alert#0,0,0#0.8
 Sirens#0,0,-50#1
 DoorOpen#-10,0,0#0.8

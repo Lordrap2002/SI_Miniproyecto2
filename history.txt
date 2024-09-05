@@ -2,7 +2,7 @@ Te despiertas de una siesta donde te faltaba la respiracion y no recuerdas la ra
 El ruido es fuerte pero tus ganas de dormir son mayores. Quieres SEGUIR durmiendo o DESPERTAR?#3,4#SEGUIR,DESPERTAR#1,3,4,5
 FINAL 1: MIMIDO, escoges permanecer en cama como si nada hubiera ocurrido.#FIN#6
 La curiosidad siempre fue tu debilidad y abres un poco la puerta. No puedes evitar MIRAR.#5#MIRAR#7,8,9,10
-Te topas con lo que hace unos instantes fue una pelea. Ahora, es una escena del crimen tras un rapido disparo, donde el cadaver en el suelo es identico al tuyo. ¿Deberias CERRAR la puerta o HUIR lentamente?#6,7#CERRAR,HUIR#9,11,12
+Te topas con lo que hace unos instantes fue una pelea. Ahora, es una escena del crimen tras un rapido disparo, donde el cadaver en el suelo es identico al tuyo. Deberias CERRAR la puerta o HUIR lentamente?#6,7#CERRAR,HUIR#9,11,12
 Olvidaste arreglar el horrible chirrido de tu puerta y el sonido te delata antes de poder cerrarla. El asesino se percata de tu presencia y va hacia ti. Tu instinto te pide ESCAPAR pero podrias PENSAR mejor.#13,8#ESCAPAR,PENSAR#9,13
 El suelo de madera cruje con la fuerza de tu pie y el sonido te delata antes de poder escapar. El asesino se percata de tu presencia y va hacia ti. Tu instinto te pide ESCAPAR pero podrias PENSAR mejor.#13,8#ESCAPAR,PENSAR#9,14
 Pensando detenidamente, puedes IR a la azotea del edificio... O PENSAR otro plan.#10,9#IR,PENSAR#9,15
@@ -11,40 +11,40 @@ Sales por la ventana y llegas a la azotea pero al tomarte tu tiempo el asesino t
 Das un paso atras al detallar la pistola en su mano. Insiste en que puedas ESCUCHAR sus razones, o puedes caminar atras y RETROCEDER al vacio.#17,12#ESCUCHAR,RETROCEDER#17,18,19
 FINAL 4: MUERTE PREMATURA, nunca fuiste el mejor defendiendote y has muerto como victima de tus propias desiciones.#FIN#16,20
 Escapando al interior, el closet es lo suficiente grande para OCULTAR a alguien, pero podrias ESCAPAR por la ventana abierta.#14,19#OCULTAR,ESCAPAR#1,21
-El asesino no te encuentra en el interior del closet mientras examina tu apartamento. ¿Deberias SALIR o AGUANTAR un poco mas la respiracion?#16,15#SALIR,AGUANTAR#22,10
-Sigues aguantando la respiracion, aunque no podras hacerlo por mucho. ¿Quieres SEGUIR o SALIR?#1,16#SEGUIR,SALIR#22,23
-Abandonas la posibilidad de escapar cuando el asesino te encuentra. Tu corazon late fuerte. el te ruega ESCUCHAR lo que tiene que decir, pero puedes ATACAR.#17,12#ESCUCHAR,ATACAR#18,24
-Decides escuchar lo que tiene que decir. Al parecer, ambos estan atrapados en un bucle temporal donde uno de los dos siempre termina muerto y aquel que murio es el testigo del asesinato. Sin embargo, puede ser mentira... ¿Quieres ESCUCHAR O ESCAPAR?#18,19#ESCUCHAR,ESCAPAR#18
-Te dice que si trabajan juntos y juran no matar al otro, pueden salir de ahi. Sin embargo, sientes muchas ganas de DORMIR o ESCAPAR.#1,19,50#DORMIR,ESCAPAR,RESISTIR#18,25
-Corres hacia la ventana y una brisa golpea tu rostro, ¿vas a SUBIR a la azotea o BAJAR a la calle por las escaleras de incendio?#10,20#SUBIR,BAJAR#6,26,17
+El asesino no te encuentra en el interior del closet mientras examina tu apartamento. Deberias SALIR o AGUANTAR un poco mas la respiracion?#16,15#SALIR,AGUANTAR#22,10
+Sigues aguantando la respiracion, aunque no podras hacerlo por mucho. Quieres SEGUIR o SALIR?#1,16#SEGUIR,SALIR#22,23
+Abandonas la posibilidad de escapar cuando el asesino te encuentra. Tu corazon late fuerte. El te ruega ESCUCHAR lo que tiene que decir, pero puedes ATACAR.#17,12#ESCUCHAR,ATACAR#18,24
+Decides escuchar lo que tiene que decir. Al parecer, ambos estan atrapados en un bucle temporal donde uno de los dos siempre termina muerto y aquel que murio es el testigo del asesinato. Sin embargo, puede ser mentira... Quieres ESCUCHAR O ESCAPAR?#18,19#ESCUCHAR,ESCAPAR#18
+Te dice que si trabajan juntos y juran no matar al otro, pueden salir de ahi. Sin embargo, sientes muchas ganas de DORMIR o ESCAPAR.#1,41,50#DORMIR,ESCAPAR,RESISTIR#18,25
+Corres hacia la ventana y una brisa golpea tu rostro, vas a SUBIR a la azotea o BAJAR a la calle por las escaleras de incendio?#10,20#SUBIR,BAJAR#26,17
 Con los pies en la calle te inunda el ruido de la ciudad. Puedes huir a tu TRABAJO en busca de ayuda familiar o ir a la POLICIA para reportar el asesinato.#22,21#TRABAJO,POLICIA#27
-Esto es un trabajo de la ley. Rapido, ¿tomaras un TAXI o iras por el METRO hasta la estacion de policia?#24,23#TAXI,METRO#27,15
-Solo puedes confiar en las personas que conoces. Rapido, ¿tomaras un TAXI o iras por el METRO hasta tu trabajo?#26,25#TAXI,METRO#27,15
-En el metro camino a la estacion de policia, una anciana a tu derecha te pide que le des tu asiento. ¿Vas a ACEPTAR esto o RECHAZAR la peticion?#28,31#ACEPTAR,RECHAZAR#29,28
-En el taxi comino a la estacion de policia, puedes INTERRUMPIR la historia que te estan contando para contarle sobre el asesinato o ESCUCHAR lo que diga?#31,27#INTERRUMPIR,ESCUCHAR#30,31
-En el metro camino a tu trabajo, una anciana a tu derecha te pide que le des tu asiento. ¿Vas a ACEPTAR esto o RECHAZAR la peticion?#32,31#ACEPTAR,RECHAZAR#29,28
-En el taxi comino a tu trabajo, puedes INTERRUMPIR la historia que te estan contando para contarle sobre el asesinato o ESCUCHAR lo que diga?#31,32#INTERRUMPIR,ESCUCHAR#30,31
-Al llegar a la estacion tras tu viaje en taxi dices que acabas de presenciar un crimen, el policia te pide que le entregues tu identificacion. ¿Vas a COLABORAR O INSISTIR que eso no es importante en este momento?#29,30#COLABORAR,INSISTIR#32,34
-Al llegar a la estacion tras tu viaje en metro dices que acabas de presenciar un crimen, el policia te pide que le entregues tu identificacion. ¿Vas a COLABORAR O INSISTIR que eso no es importante en este momento?#29,30#COLABORAR,INSISTIR#32,34
+Esto es un trabajo de la ley. Rapido, tomaras un TAXI o iras por el METRO hasta la estacion de policia?#24,23#TAXI,METRO#27,15
+Solo puedes confiar en las personas que conoces. Rapido, tomaras un TAXI o iras por el METRO hasta tu trabajo?#26,25#TAXI,METRO#27,15
+En el metro camino a la estacion de policia, una anciana enferma a tu derecha te pide que le des tu asiento. Vas a ACEPTAR esto o RECHAZAR la peticion?#28,31#ACEPTAR,RECHAZAR#29,28
+En el taxi comino a la estacion de policia, puedes INTERRUMPIR la historia que te estan contando para contarle sobre el asesinato o ESCUCHAR lo que diga#31,27#INTERRUMPIR,ESCUCHAR#30,31
+En el metro camino a tu trabajo, una anciana enferma a tu derecha te pide que le des tu asiento. Vas a ACEPTAR esto o RECHAZAR la peticion?#32,31#ACEPTAR,RECHAZAR#29,28
+En el taxi comino a tu trabajo, puedes INTERRUMPIR la historia que te estan contando para contarle sobre el asesinato o ESCUCHAR lo que diga#31,32#INTERRUMPIR,ESCUCHAR#30,31
+Al llegar a la estacion tras tu viaje en taxi dices que acabas de presenciar un crimen, el policia te pide que le entregues tu identificacion. Vas a COLABORAR O INSISTIR que eso no es importante en este momento?#29,30#COLABORAR,INSISTIR#32,34
+Al llegar a la estacion tras tu viaje en metro dices que acabas de presenciar un crimen, el policia te pide que le entregues tu identificacion. Vas a COLABORAR O INSISTIR que eso no es importante en este momento?#29,30#COLABORAR,INSISTIR#32,34
 El policia revisa tu identificacion pero dice que no eres la persona en la foto pues no llevas la misma ropa que en el documento. Solo puedes INSISTIR.#30#INSISTIR#32,33
 FINAL 5: POLICIA EN COLOMBIA, Te detuvieron por irrespeto a la autoridad.#FIN#35
 Tu acto absurdo ante las otras personas te ha bajado del transporte junto a los perros callejeros. Solo puedes CAMINAR y esperar que no te hayan seguido.#16#CAMINAR#27,22,37
-Excepto de la campanilla que suena sobre la puerta cuando llegas a tu trabajo, el local parece vacio debido a la hora. La mayor parte del ruido proviene de los apartamentos arriba del local. Podrias interntar buscar a tu JEFE a tu AMIGO del trabajo en la parte trasera.#34,33#JEFE,AMIGO#36,38
+Excepto por la campanilla que suena sobre la puerta cuando llegas a tu trabajo, el local parece vacio debido a la hora. La mayor parte del ruido proviene de los apartamentos arriba del local. Podrias interntar buscar a tu JEFE o buscar a tu AMIGO del trabajo en la parte trasera.#34,33#JEFE,AMIGO#36,38
 Al entrar en la zona de empleados, notas que tu companero dejo una bolsa atras que podrias REVISAR o tambien podrias TOMAR tu chaqueta de trabajo para intentar disfrazarte.#35,36#REVISAR,TOMAR#38,10
 Llegas a la oficina de tu jefe y esta vacia. Podrias intentar TOMAR la chaqueta que dejo para intentar disfrazarte o BUSCAR entre el cajon de su escritorio que nunca has podido ver.#36,35#TOMAR,BUSCAR#38,10
 Revisando pertenencias ajenas te encuentras con una pistola. La cargas inmediatamente... es como si ya lo hubieras hecho muchas veces antes. Solo puedes SALIR a buscar ayuda en los apartamentos de arriba.#38#SALIR#38,39
 Agarras la chaqueta, pero escuhas la puerta abrirse a tu izquierda y te topas con el asesino. Puedes intentar ATACAR o LANZAR la chaqueta.#12,37#ATACAR,LANZAR#42,38
-Cuando lanzas la chaqueta logras enredar al asesino y al tropezar este deja caer su pistola. Tras tomar el arma, podrias DISPARAR o HUIR en busca de ayuda.#39,40#DISPARAR,HUIR#38,
+Cuando lanzas la chaqueta logras enredar al asesino y al tropezar este deja caer su pistola. Tras tomar el arma, podrias DISPARAR o HUIR en busca de ayuda.#39,40#DISPARAR,HUIR#38,20
 Al salir, te encuentras cara a cara con el asesino. Ambos se sorprenden. Podrias DISPARAR o HUIR en busca de ayuda.#39,40#DISPARAR,HUIR#40,38,43
 FINAL 6: ASESINO. Mataste a una persona y las camaras del local grabaron lo que hiciste. Eres un criminal buscado. A veces, cierras los ojos y suenas con lo que ocurrio aquel dia...#FIN#12,41
 Aprovechando la confusion del asesino, sales rapidamente del local. Podrias SUBIR hacia el edificio o BUSCAR ayuda de la policia.#42,41#SUBIR,BUSCAR#26,27
-Al llegar a la estacion dices que acabas de presenciar un crimen, el policia te pide que le entregues tu identificacion. ¿Vas a COLABORAR O INSISTIR que eso no es importante en este momento?#29,30#COLABORAR,INSISTIR#32,34
+Escapas y lo mas cercano es la estacion. Al llegar, dices que acabas de presenciar un crimen, el policia te pide que le entregues tu identificacion. Vas a COLABORAR O INSISTIR que eso no es importante en este momento?#29,30#COLABORAR,INSISTIR#32,34
 Empiezas a subir las escaleras del edificio, puedes TOCAR una puerta o SUBIR.#43,44#TOCAR,SUBIR#44,45
 Nadie responde, solo puedes SUBIR.#44#SUBIR#46,44
 Sigues subiendo, puedes TOCAR una puerta o SUBIR.#45,46#TOCAR,SUBIR#44,45
 FINAL 7: PENNY, PENNY, PENNY. Tienes mucha determinacion. Sigues tocando la puerta infinitamente pues nadie respondera...#FIN#47
 Llegaste a la cima. Despues de tanto miedo, finalmente tienes la determinacion de enfrentarte al asesino. Al apuntar, te ruega ESCUCHAR lo que tiene que decir...o puedes DISPARAR.#47,49#ESCUCHAR,DISPARAR#48,39
-Decides escuchar lo que tiene que decir. Al parecer, ambos estan atrapados en un bucle temporal donde uno de los dos siempre termina muerto y aquel que murio es el testigo del asesinato. Sin embargo, puede ser mentira... ¿Quieres ESCUCHAR o DISPARAR?#48,49#ESCUCHAR,DISPARAR#48,18
+Decides escuchar lo que tiene que decir. Al parecer, ambos estan atrapados en un bucle temporal donde uno de los dos siempre termina muerto y aquel que murio es el testigo del asesinato. Sin embargo, puede ser mentira... Quieres ESCUCHAR o DISPARAR?#48,49#ESCUCHAR,DISPARAR#48,18
 Te dice que si trabajan juntos y juran no matar al otro, pueden salir de ahi. Sin embargo, sientes muchas ganas de DORMIR o DISPARAR.#1,49,50#DORMIR,DISPARAR,RESISTIR#48,18
-FINAL 8: EL CICLO. Decides disparar al asesino, terminando con su vida. Pero al voltear hacia la izquierda, ves a alguien observando desde un apartamento cercano. Ese testigo acaba de presenciar el asesinato... y tiene el mismo rostro que el asesino que acabas de matar. El ciclo se repite, atrapándote una vez más en el bucle del que no puedes escapar.#FIN#12,49
+FINAL 8: EL CICLO. Decides disparar al asesino, terminando con su vida. Pero al voltear hacia la izquierda, ves a alguien observando desde un apartamento cercano. Ese testigo acaba de presenciar el asesinato... y tiene el mismo rostro que el asesino que acabas de matar. El ciclo se repite, atrapandote una vez mas en el bucle del que no puedes escapar.#FIN#12,49
 FINAL 9: RESISTIR. Contra todo pronóstico, logras encontrar la forma de romper el ciclo. Con una combinación de determinación y decisiones clave, evitas que los eventos se repitan. Finalmente, te liberas de la trampa temporal, demostrando que el destino no es inmutable y que puedes cambiar tu historia. Ya no eres un testigo.#FIN#50

@@ -9,7 +9,7 @@ class Line:
     def getData(self):
         with open("history.txt", 'r') as file:
             line = file.readlines()[self.lineNumber].split("#")
-            if len(line) > 2:
+            if len(line) > 3:
                 return line[0], [int(x) for x in line[1].split(",")], line[2].split(","), self.getSounds([int(x) for x in line[3].split(",")])
             else:
                 return line[0], [], [], self.getSounds([int(x) for x in line[2].split(",")])
