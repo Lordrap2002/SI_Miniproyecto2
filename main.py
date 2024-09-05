@@ -43,6 +43,14 @@ def menu():
             playLine(1)
     print("Gracias por jugar! :)")
 
+#def test():
+#    menuSonido = Audio("ManSpeaks", (0, 0,20), 10)
+#    menuSonido.play()
+#    userInput = 0
+#    userInput = int(stdin.readline())
+#    if userInput != 1:
+#        menuSonido.stop()
+
 def main():
     # Start OpenAL 
     device = alc.alcOpenDevice(None)
@@ -53,6 +61,7 @@ def main():
     oalGetListener().set_orientation((0, 0, -1, 0, 1, 0))
 
     menu()
+    #test()
 
     # Close OpenAL
     oalQuit()
